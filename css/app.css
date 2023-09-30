@@ -44,25 +44,25 @@ main .banner h2 {
 .contenedor-productos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Cambiar a espacio entre los elementos */
+  justify-content: space-between; 
   align-items: flex-start;
-  margin: 20px; /* Añadir margen alrededor del contenedor */
+  margin: 20px; 
 }
 
 .producto {
-  width: calc(20% - 20px); /* Ancho del 20% y espacio entre los elementos */
+  width: calc(20% - 20px); 
   margin: 10px;
-  background-color: #f2f2f2; /* Cambiar el color de fondo a gris claro */
+  background-color: #f2f2f2; 
   padding: 10px;
-  border-radius: 5px; /* Añadir bordes redondeados */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */
-  text-align: center; /* Alinear contenido al centro */
+  border-radius: 5px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
 }
 
 .producto-imagen {
   max-width: 100%;
   height: 200px;
-  border-radius: 5px; /* Añadir bordes redondeados a la imagen */
+  border-radius: 5px; 
 }
 
 .producto-info {
@@ -71,18 +71,18 @@ main .banner h2 {
 
 /* Botón "Agregar" */
 .producto-agregar {
-  background-color: #ff6600; /* Cambiar el color a naranja */
+  background-color: #ff6600; 
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  border-radius: 5px; /* Añadir bordes redondeados */
-  transition: background-color 0.3s ease; /* Agregar transición al color de fondo */
-  margin-top: 10px; /* Espacio en la parte superior del botón */
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+  margin-top: 10px; 
 }
 
 .producto-agregar:hover {
-  background-color: #ff4500; /* Cambiar el color de fondo al pasar el ratón */
+  background-color: #ff4500; 
 }
 
 /* Estilo para el carrito y botón "Finalizar Compra" */
@@ -92,15 +92,15 @@ main .banner h2 {
 }
 
 #finalizar-compra {
-  background-color: #4CAF50; /* Cambiar el color a verde */
+  background-color: #4CAF50;
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px; /* Añadir bordes redondeados */
+  border-radius: 5px; 
   margin-top: 10px;
 }
 
 #finalizar-compra:hover {
-  background-color: #45a049; /* Cambiar el color de fondo al pasar el ratón */
+  background-color: #45a049; 
 }

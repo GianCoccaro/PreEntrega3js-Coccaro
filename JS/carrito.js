@@ -20,7 +20,7 @@ function calcularTotalCarrito() {
 // Función para actualizar el contenido del carrito
 function actualizarCarrito() {
     const contenedorCarrito = document.querySelector("#carrito-productos");
-    contenedorCarrito.innerHTML = ""; // Vaciar el contenido actual del carrito
+    contenedorCarrito.innerHTML = ""; 
 
     productosEnCarrito.forEach(producto => {
         const divProducto = document.createElement("div");
@@ -39,7 +39,7 @@ function actualizarCarrito() {
     // Actualiza el total del carrito
     totalPrecio.textContent = calcularTotalCarrito();
     
-    // Muestra u oculta el botón "Finalizar Compra" según si el carrito está vacío o no
+    // Deberia mostrar el boton de finalizar compra, pero falla //
     if (productosEnCarrito.length > 0) {
         botonFinalizarCompra.style.display = "block";
     } else {
@@ -54,12 +54,12 @@ if (productosEnCarrito.length > 0) {
     contenedorCarritoAcciones.classList.remove("disabled");
     contenedorCarritoComprado.classList.add("disabled");
     
-    // También actualiza el contenido y el total del carrito
+    
     actualizarCarrito();
     totalPrecio.textContent = calcularTotalCarrito();
 }
 
-// Cuando se agrega un producto al carrito
+
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
